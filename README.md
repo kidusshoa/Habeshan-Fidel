@@ -1,6 +1,6 @@
 # Habeshan-Fidel
 
-geez fidel typing software using electron
+geez fidel typing software using electronjs
 
 npm init -y
 
@@ -14,4 +14,4 @@ npm install @babel/core babel-loader @babel/preset-react --save-dev
 
 npm start
 npm run build
-npm run electron to build
+npm run electron

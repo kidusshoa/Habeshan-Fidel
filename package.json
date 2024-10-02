@@ -9,7 +9,7 @@
     "electron": "npm run build && electron ."
   },
   "keywords": [],
-  "author": "",
+  "author": "Kidus Zekarias",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.25.2",
