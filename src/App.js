@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Header from "./components/Header";
 
 const App = () => {
   const [text, setText] = useState("");
@@ -9,6 +10,7 @@ const App = () => {
 
   return (
     <div className="app p-4">
+      <Header />
       <h1 className="text-2xl font-bold mb-4">Habeshan Fidel</h1>
       <textarea
         value={text}

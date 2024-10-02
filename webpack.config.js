@@ -18,11 +18,22 @@ module.exports = {
         },
       },
       {
+        test: /\.(png|jpe?g|gif|svg)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[path][name].[ext]",
+            },
+          },
+        ],
+      },
+      {
         test: /\.css$/, // Add this rule for CSS
         use: [
-          "style-loader", // Injects styles into DOM
-          "css-loader", // Interprets @import and url() like import/require() and will resolve them
-          "postcss-loader", // Processes CSS with PostCSS (which includes Tailwind)
+          "style-loader", // Injects styles into the DOM
+          "css-loader", // Turns CSS into CommonJS
+          "postcss-loader", // Processes CSS with PostCSS
         ],
       },
     ],
@@ -39,8 +50,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./public/index.html", // Path to your HTML file
-      filename: "index.html", // Output file in dist folder
+      template: "./public/index.html",
+      filename: "index.html",
     }),
   ],
 };

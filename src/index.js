@@ -2,9 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import "./styles/tailwind.css";
+import App from "./App";
 
-const App = () => {
-  return <h1>Geez Typing App</h1>;
+const Index = () => {
+  return <App />;
 };
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<Index />, document.getElementById("root"));
