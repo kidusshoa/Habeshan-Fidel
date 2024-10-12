@@ -77,19 +77,19 @@ const GeEzKeyboard = () => {
       <div className="flex w-full h-[150px] items-center flex-row justify-center gap-2">
         <button
           onClick={handleSpaceClick}
-          className="bg-blue-500 w-1/4 text-white text-xl p-3 rounded-lg  hover:bg-blue-600 transition-colors"
+          className="bg-[#969393] w-1/4 text-white text-xl p-3 rounded-lg  hover:bg-[#7a7878] transition-colors"
         >
           Space
         </button>
         <button
           onClick={handleBackspaceClick}
-          className="bg-red-500 text-white text-xl p-3 rounded-lg w-1/4 hover:bg-red-600 transition-colors"
+          className="bg-blue-500 text-white text-xl p-3 rounded-lg w-1/4 hover:bg-blue-600 transition-colors"
         >
           Backspace
         </button>
         <button
           onClick={handleDeleteClick}
-          className="bg-yellow-400 text-white text-xl p-3 rounded-lg w-1/4 hover:bg-yellow-600 transition-colors"
+          className="bg-red-500 text-white text-xl p-3 rounded-lg w-1/4 hover:bg-red-600 transition-colors"
         >
           Delete
         </button>
